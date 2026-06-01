@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎈 快樂學英文吧！5年級英語期末衝刺基地 🎈</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Sans+TC:wght@400;700;900&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .font-title {
+            font-family: 'Fredoka One', 'Noto Sans TC', sans-serif;
+        }
+        
+        /* 輕微的背景彩色泡泡飄浮裝飾（純CSS） */
+        @keyframes floatBg {
+            0% { transform: translateY(0px) rotate(0deg); opacity: 0.2; }
+            50% { transform: translateY(-20px) rotate(10deg); opacity: 0.4; }
+            100% { transform: translateY(0px) rotate(0deg); opacity: 0.2; }
+        }
+        .bg-bubble {
+            animation: floatBg 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-amber-50 via-orange-50 to-emerald-50 min-h-screen flex flex-col items-center justify-center px-4 relative overflow-hidden">
+
+    <!-- 背景趣味裝飾圖案（純色塊免圖檔，不干擾視覺） -->
+    <div class="bg-bubble absolute top-12 left-10 text-6xl opacity-20 select-none">☀️</div>
+    <div class="bg-bubble absolute bottom-16 right-12 text-6xl opacity-20 select-none" style="animation-delay: 2s;">🌈</div>
+    <div class="bg-bubble absolute bottom-20 left-16 text-5xl opacity-20 select-none" style="animation-delay: 4s;">✨</div>
+    <div class="bg-bubble absolute top-24 right-20 text-5xl opacity-20 select-none" style="animation-delay: 1s;">🍀</div>
+
+    <!-- 主卡片內容 -->
+    <main class="w-full max-w-xl bg-white/90 backdrop-blur-sm rounded-3xl p-8 text-center shadow-xl border-4 border-amber-300 relative z-10">
+        
+        <!-- 頂部繽紛標籤 -->
+        <div class="inline-block bg-amber-400 text-amber-950 font-black text-sm px-6 py-1.5 rounded-full shadow-sm mb-6 tracking-wide">
+            FUN ENGLISH LEARNING 🎈
+        </div>
+
+        <!-- 主標題：快樂學英文風格 -->
+        <h1 class="text-4xl md:text-5xl font-black text-orange-500 drop-shadow-sm font-title leading-snug mb-3">
+            快樂學英文吧！
+        </h1>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-emerald-600 tracking-wide mb-6">
+            5年級期末單字衝刺特訓
+        </h2>
+
+        <!-- 考試日期提醒（高對比橫幅） -->
+        <div class="bg-slate-900 text-white rounded-2xl py-3 px-6 inline-flex flex-col items-center justify-center shadow-md mb-8">
+            <span class="text-xs text-amber-400 font-bold tracking-widest uppercase">📅 期末大會考</span>
+            <span class="text-xl md:text-2xl font-black tracking-wide mt-0.5">考試日期：6 月 12 日</span>
+        </div>
+
+        <!-- 簡潔溫馨說明 -->
+        <p class="text-slate-600 text-base md:text-lg font-bold leading-relaxed max-w-sm mx-auto mb-10">
+            精選 <span class="text-orange-500 text-xl font-black">50</span> 個核心字彙，<br>
+            免登入、免註冊，隨點隨練！<br>
+            讓我們一起開心地把英文單字變熟悉吧！
+        </p>
+
+        <!-- 巨型進入按鈕（點擊後直接跳轉至遊戲頁面） -->
+        <a href="english_practice.html" class="inline-block bg-gradient-to-r from-orange-400 via-amber-400 to-emerald-500 p-1 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 active:translate-y-0 transition-all w-full max-w-xs group">
+            <div class="bg-white group-hover:bg-transparent rounded-[14px] py-4 px-6 transition-all">
+                <span class="block text-xl font-black bg-gradient-to-r from-orange-500 to-emerald-600 bg-clip-text text-transparent group-hover:text-white transition-colors">
+                    🚀 開始單字特訓大作戰
+                </span>
+            </div>
+        </a>
+
+    </main>
+
+    <!-- 底部小字 -->
+    <footer class="mt-8 text-xs text-slate-400 font-bold relative z-10 tracking-wide">
+        自主複習基地 ‧ 祝同學們期末考高分通關！
+    </footer>
+
+</body>
+</html>
